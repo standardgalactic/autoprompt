@@ -423,6 +423,14 @@ def csv_dataset():
     )
 
 
+def check_for_updates():
+    st.sidebar.markdown("### Check for Updates")
+    if st.sidebar.button("Check for Updates"):
+        st.sidebar.write("Checking for updates...")
+        # Add your update checking logic here
+        st.sidebar.write("No updates available.")
+
+
 def run():
     #  css_hack()
     st.title('AutoPrompt Demo')
